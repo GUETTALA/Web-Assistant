@@ -18,7 +18,80 @@ root {
 body
 {
  font: 11px verdana, sans-serif;
- background: #AFA99B url("fond.jpg") top left no-repeat;
+ background: #5F879D url("fond.jpg") fixed no-repeat;
  margin: 0;
  padding: 0;
+}
+
+#menuDeroulant
+{
+ width: 644px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+ position: absolute;
+ top: 0;
+ left: 0;   
+}
+
+#menuDeroulant li
+{
+ float: left;
+ width: 150px;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+
+#menuDeroulant .sousMenu
+{
+ display: none;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+#menuDeroulant .sousMenu li
+{
+ float: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+ width: 149px;
+ border-top: 1px solid transparent;
+ border-right: 1px solid transparent;
 }	
+
+#menuDeroulant li a:link, #menuDeroulant li a:visited
+{
+ display: block;
+ height: 1%;
+ color: #FFF;
+ background: #3B4E77;
+ margin: 0;
+ padding: 4px 8px;
+ border-right: 1px solid #fff;
+ text-decoration: none;
+}
+#menuDeroulant li a:hover { background-color: #F2462E; }
+#menuDeroulant li a:active { background-color: #5F879D; }
+
+#menuDeroulant .sousMenu li a:link,
+
+#menuDeroulant .sousMenu li a:visited
+{
+ display: block;
+ color: #FFF;
+ margin: 0;
+ border: 0;
+ text-decoration: none;
+ background: transparent url("fondTR.png") repeat;
+}
+#menuDeroulant .sousMenu li a:hover
+{
+ background-image: none;
+ background-color: #F2462E;
+}
+
+#menuDeroulant li:hover > .sousMenu { display: block; }	
