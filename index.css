@@ -15,3 +15,50 @@ root {
     display: block;
 }
 
+body
+{
+ font: 11px verdana, sans-serif;
+ background: #AFA99B url("fond.jpg") top left no-repeat;
+ margin: 0;
+ padding: 0;
+}	
+
+#menuDeroulant
+{
+ width: 644px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+#menuDeroulant li
+{
+ float: left;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}	
+
+#menuDeroulant .sousMenu
+{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+#menuDeroulant .sousMenu li
+{
+ float: none;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}		
+
+#menuDeroulant li
+{
+ float: left;
+ width: 150px;
+ margin: 0;
+ padding: 0;
+ border: 0;
+}	
