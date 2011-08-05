@@ -1,0 +1,65 @@
+/* 
+    Document   : style
+    Created on : 6 août 2011, 00:04:47
+    Author     : Abdelheq
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background: #F2462E;
+}
+#menud, #menud ul /* Liste */     
+{
+        list-style : none; /* on supprime le style par défaut de la liste */
+		padding : 0px;
+}
+
+#menud a /* Contenu des listes */
+{
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+        text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+        width : 181.4px; /*largeur de chaque élément du menu*/
+}
+
+#menud li /* Elements des listes */      
+{ 
+		float : left; 
+}
+
+#menud li ul /* Sous-listes */
+{ 
+        position: absolute; /* Position absolue */
+        width: 144px;/* paramétre pour avoir les sous menus dans la même colone*/
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+}
+
+#menud li ul ul /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+{
+        margin    : -26px 0 0 181.2px ; 
+}
+
+#menud li ul ul ul  /*On décale les sous-sous-sous-listes pour qu'elles ne soient pas au dessus des sous-sous-listes*/
+{
+        margin    : 0px 0px 0px 181.2px ; 
+}
+
+#menud li:hover ul ul, #menud li:hover ul ul ul /*Sous-sous & sous-sou-sous listes lorsque la souris passe sur un élément de liste */
+{
+        left: -999em;  /*On expédie les sous-sous-sous listes hors du champ de vision */
+}
+
+#menud li:hover ul, #menud li li:hover ul, #menud li li li:hover ul /*  affichage avec li li ul:hover ul mais impossible alors de détailler  */
+{
+        left: auto; /* Repositionnement normal de la sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste ET */
+}
+
