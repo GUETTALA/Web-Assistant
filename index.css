@@ -18,14 +18,14 @@ root {
 body
 {
  font: 11px verdana, sans-serif;
- background: #5F879D url("fond.jpg") fixed no-repeat;
+ background: #5F879D url("fond.jpg") repeat;
  margin: 0;
  padding: 0;
 }
 
 #menuDeroulant
 {
- width: 644px;
+ width: 1500px;
  list-style-type: none;
  margin: 0;
  padding: 0;
@@ -38,7 +38,7 @@ body
 #menuDeroulant li
 {
  float: left;
- width: 150px;
+ width: 250px;
  margin: 0;
  padding: 0;
  border: 0;
@@ -52,16 +52,30 @@ body
  padding: 0;
  border: 0;
 }
+
 #menuDeroulant .sousMenu li
 {
  float: none;
  margin: 0;
  padding: 0;
  border: 0;
+ width: 249px;
+ border-top: 1px solid transparent;
+ border-right: 1px solid transparent;
+}
+
+#menuDeroulant .sousMenu li ul
+{
+ float: right;
+ left: auto;
+ margin: -23px 0 0 250px; 
+ padding: 0;
+ border: 0;
+ position: absolute;
  width: 149px;
  border-top: 1px solid transparent;
  border-right: 1px solid transparent;
-}	
+}
 
 #menuDeroulant li a:link, #menuDeroulant li a:visited
 {
